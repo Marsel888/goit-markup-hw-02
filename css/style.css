@@ -12,10 +12,19 @@ body {
   background-color: var(--background-color);
   color: var(--main-color);
   font-family: 'Roboto', 'Raleway', sans-serif;
+  box-sizing: border-box;
   width: 1600px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 ul {
   list-style: none;
+  padding-left: 0;
 }
 h1,
 h2,
@@ -23,10 +32,27 @@ h3,
 h4 {
   color: var(--secondary-color);
 }
-a{
+a {
   text-decoration: none;
+  display: inline-block;
+}
+
+/* outline */
+header,
+main,
+footer {
+  outline: 1px solid tomato;
+
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Шапка Навигация  */
+.container .logo{
+  color:black;
+}
 
 .link-nav a {
   font-weight: 500;
@@ -39,18 +65,23 @@ a{
 .link-nav a:focus {
   color: var(--akcent-color);
 }
-.head-mail .mail-tel{
+.ul-header {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.head-mail .mail-tel {
   color: var(--main-color);
 }
 
 .mail-tel {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);;
+  color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  padding-left: 0;
 }
 .mail-tel:hover,
 .mail-tel:focus {
@@ -69,13 +100,19 @@ a{
   line-height: 1.8;
   width: 200px;
   height: 50px;
+  /* display: inline-block; */
+ 
+  
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
   background: #2196f3;
   color: var(--background-color-buttom);
+  /* margin-top: 350px; */
 }
+
+
 .buttom:hover {
   background-color: var(--akcent-color);
   color: var(--background-color-buttom);
@@ -84,8 +121,16 @@ a{
 /* Секция 1 */
 .hero {
   background-color: var(--backgroung-secondary-color);
+  text-align: center;
+  width: 1600px;
+  height: 600px;
 }
-h1 {
+.h1-herro {
+  display: inline-block;
+  width: 696px;
+ 
+  
+  
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -93,8 +138,13 @@ h1 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color-buttom);
+ 
+  
 }
 /* Секция 2  */
+.section-number{
+  margin-top: 94px;
+}
 .h3-section2 {
   font-size: 14px;
   line-height: 1.1;
@@ -109,6 +159,9 @@ h1 {
 }
 /* Секция 3 */
 .h2-section3 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
   font-size: 36px;
   line-height: 1.1;
   color: var(--secondary-color);
@@ -118,9 +171,13 @@ h1 {
   background-color: var(--background-color-buttom);
 }
 .h2-section4 {
+  text-align: center;
   font-size: 36px;
   line-height: 1.1;
   color: var(--secondary-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 94px;
 }
 .name-people {
   font-weight: 500;
@@ -141,67 +198,71 @@ h1 {
 /* основной цвет фона #E5E5E5 */
 footer {
   width: 1600px;
-height: 252px;
-left: 0px;
-top: 2097px;
-background: #2F303A;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+  background: #2f303a;
   
 }
-.logo{
+
+
+.logo {
   color: var(--background-color);
   width: 145px;
-height: 31px;
-left: 215px;
-top: 2157px;
+  height: 31px;
+  left: 215px;
+  top: 2157px;
+  display: inline-block;
+  /* width: 1200px;
+  margin-left: auto;
+  margin-right: auto; */
+  
 
-font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 1.19;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
 
-
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 }
-span{
+span {
   color: var(--akcent-color);
   width: 145px;
-height: 31px;
-left: 215px;
-top: 2157px;
-
-font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 1.19;
+  height: 31px;
+  left: 215px;
+  top: 2157px;
 
 
-letter-spacing: 0.03em;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
 
+  letter-spacing: 0.03em;
 }
 address {
-  
-width: 231px;
-height: 21px;
-left: 215px;
-top: 2208px;
+  width: 231px;
+  height: 21px;
+  left: 215px;
+  top: 2208px;
 
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 1.7;
-/* or 171% */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  /* or 171% */
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-color: var(--background-color);
+  color: var(--background-color);
 }
 /* Макет № 2 */
 /* Кнопки меню */
 .button-work {
   color: var(--secondary-color);
- 
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -215,7 +276,6 @@ color: var(--background-color);
 
 .board-one {
   background-color: var(--background-color-buttom);
-  
 }
 .button-work:hover,
 .button-work:focus {
@@ -234,7 +294,6 @@ color: var(--background-color);
 }
 .board-three {
   background-color: var(--background-color-buttom);
- 
 }
 .board-three:hover,
 .board-three:focus {
@@ -255,31 +314,29 @@ color: var(--background-color);
   background-color: var(--akcent-color);
 }
 /* Примеры работ */
-.h2-Example-of-work{
+.h2-Example-of-work {
   color: var(--secondary-color);
   width: 322px;
-height: 36px;
-left: 639px;
-top: 576px;
+  height: 36px;
+  left: 639px;
+  top: 576px;
 
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
 
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 36px;
-
-
-letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
 }
-.p-Example-of-work{
+.p-Example-of-work {
   width: 322px;
-height: 30px;
-left: 239px;
-top: 616px;
+  height: 30px;
+  left: 239px;
+  top: 616px;
 
-font-family: Roboto;
-font-size: 16px;
-line-height: 30px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 30px;
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 }
