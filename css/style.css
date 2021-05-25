@@ -25,6 +25,9 @@ body {
 ul {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+
 }
 h1,
 h2,
@@ -34,7 +37,11 @@ h4 {
 }
 a {
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
+}
+p {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 /* outline */
@@ -42,7 +49,6 @@ header,
 main,
 footer {
   outline: 1px solid tomato;
-
 }
 .container {
   width: 1200px;
@@ -50,8 +56,8 @@ footer {
   margin-right: auto;
 }
 /* Шапка Навигация  */
-.container .logo{
-  color:black;
+.logo.logo-color {
+  color: black;
 }
 
 .link-nav a {
@@ -101,17 +107,16 @@ footer {
   width: 200px;
   height: 50px;
   /* display: inline-block; */
- 
-  
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-top: 30px;
+  padding: 0;
+  border: 0;
+
 
   background: #2196f3;
   color: var(--background-color-buttom);
-  /* margin-top: 350px; */
-}
 
+}
 
 .buttom:hover {
   background-color: var(--akcent-color);
@@ -122,15 +127,13 @@ footer {
 .hero {
   background-color: var(--backgroung-secondary-color);
   text-align: center;
-  width: 1600px;
-  height: 610px;
+  padding: 300px 0px;
 }
 .h1-herro {
-  display: inline-block;
-  width: 696px;
+  width: 691px;
  
-  
-  
+  margin: 0 auto;
+  text-align: center;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -138,11 +141,9 @@ footer {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color-buttom);
- 
-  
 }
 /* Секция 2  */
-.section-number{
+.section-number {
   margin-top: 94px;
 }
 .h3-section2 {
@@ -197,13 +198,34 @@ footer {
 /* вторичный цвет фона #F5F4FA */
 /* основной цвет фона #E5E5E5 */
 footer {
-  width: 1600px;
+
   height: 252px;
   left: 0px;
   top: 2097px;
   background: #2f303a;
-  
 }
+.footer-logo{
+  padding-top: 60px;
+}
+
+.tel-mail{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    padding-top: 9px;
+    width: 231px;
+    height: 21px;
+   
+  
+  }
+  .tel-mail:hover,
+  .tel-mail:focus {
+    color: var(--akcent-color);
+  }
 
 
 .logo {
@@ -213,9 +235,6 @@ footer {
   left: 215px;
   top: 2157px;
   display: inline-block;
-  /* width: 1200px;
-  margin-left: auto;
-  margin-right: auto; */
   
 
   font-family: Raleway;
@@ -226,13 +245,14 @@ footer {
 
   letter-spacing: 0.03em;
 }
+
+
 span {
   color: var(--akcent-color);
   width: 145px;
   height: 31px;
   left: 215px;
   top: 2157px;
-
 
   font-family: Raleway;
   font-style: normal;
@@ -243,6 +263,10 @@ span {
   letter-spacing: 0.03em;
 }
 address {
+  
+  padding-top: 20px;
+  
+  
   width: 231px;
   height: 21px;
   left: 215px;
@@ -257,6 +281,9 @@ address {
   letter-spacing: 0.03em;
 
   color: var(--background-color);
+}
+.ul-footer{
+  margin-top:9px;
 }
 /* Макет № 2 */
 /* Кнопки меню */
